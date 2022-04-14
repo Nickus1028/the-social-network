@@ -17,17 +17,15 @@ COMING SOON
 * [Tests](#tests)
 * [Code](#code)
 
-
-
 ## Installation
 Run npm start in the root folder.
 
 ## Usage
-Can be used for a social networking site. Users can be created, updated deleted and then they can post thoughts and reactions.
+Can be used for a social networking site. Users can be created, updated, and deleted. User can also post thoughts and give reactions to other user's thoughts.
 
 
 ## Tests
-Tested using Insomnia
+Tested using <a href= "https://insomnia.rest/">Insomnia</a>
 
 ## Code
 * Javascript

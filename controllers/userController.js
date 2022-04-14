@@ -33,6 +33,7 @@ const userController = {
                res.status(500).json(err)
         });
      },
+     
      createUser({ body }, res) {
          User.create(body)
          .then(dbUserData => res.json(dbUserData))
@@ -48,7 +49,7 @@ const userController = {
          )
          .then(dbUserData => {
              if (!dbUserData) {
-                 res.status(404).json({ message: 'No user found with this ID!' });
+                 res.status(404).json({ message: 'No user found with this ID' });
                  return;
              }
              res.json(dbUserData);
@@ -61,7 +62,7 @@ const userController = {
          User.findOneAndUpdate({ _id: params.id}, body, { new: true, runValidators: true})
          .then(dbUserData => {
              if (!dbUserData) {
-                 res.status(404).json({ message: 'No user found with this ID!' });
+                 res.status(404).json({ message: 'No user found with this ID' });
                  return;
              }
              res.json(dbUserData);
@@ -73,7 +74,7 @@ const userController = {
          User.findOneAndDelete({ _id: params.id })
          .then(dbUserData => {
          if (!dbUserData) {
-             res.status(404).json({ message: 'No user found with this ID!' });
+             res.status(404).json({ message: 'No user found with this ID' });
              return;
          }
          res.json(dbUserData);
