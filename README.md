@@ -6,7 +6,7 @@
 A backend database using MongoDB and Mongoose
 
 ## Video 
-COMING SOON
+https://drive.google.com/file/d/1me1CwMLBmEMY9UwSZabDtlr2rfRfumki/view
 
 ## Table of Contents
 
